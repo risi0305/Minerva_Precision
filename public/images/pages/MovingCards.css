@@ -1,0 +1,84 @@
+.products-fieldset {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    color: #333;
+  }
+  
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  
+  .card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s;
+    width: 250px;
+    height:300px;
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .card h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  /* Categories Section */
+  .categories-container {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .categories-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .category-item {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+  }
+  
+  .category-item img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ccc;
+    transition: transform 0.3s, border-color 0.3s;
+  }
+  
+  .category-item img:hover {
+    transform: scale(1.1);
+    border-color: #007bff;
+  }
+  
+  .category-item p {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  

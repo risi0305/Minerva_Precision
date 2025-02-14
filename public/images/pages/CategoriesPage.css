@@ -1,0 +1,48 @@
+.categories-fieldset {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .categories-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .categories-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .category-item {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+  }
+  
+  .category-item img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ccc;
+    transition: transform 0.3s, border-color 0.3s;
+  }
+  
+  .category-item img:hover {
+    transform: scale(1.1);
+    border-color: #007bff;
+  }
+  
+  .category-item p {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  

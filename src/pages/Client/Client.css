@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  html,
+  body {
+    background-color: white !important;
+    color: black !important;
+    height: 100%;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    padding-top: 40px;
+  }
+  
+  /* Card styles */
+  .card {
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1); /* Initial scale */
+    overflow: hidden; /* Ensures images stay within the bounds of the card */
+    height: 300px; /* Set a fixed height for the card */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  /* Hover effect for the card */
+  .card:hover {
+    transform: scale(1.05); /* Slightly increase size */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Increase shadow */
+  }
+  
+  /* Card image styles */
+  .card img {
+    width: 100%;
+    height: 100%; /* Make sure the image fills the card */
+    object-fit: stretch; /* Ensure the image covers the area without stretching */
+    border-radius: 10px;
+  }
+  
+  /* ✅ WHITE MODAL WITH BLACK TEXT */
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    border: 1px solid black;
+  }
+  
+  .modal-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .modal-text {
+    margin-top: 10px;
+    font-size: 16px;
+    color: black;
+    line-height: 1.6;
+    text-align: justify;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+  }
+  
+  .modal.show-modal {
+    visibility: visible;
+    opacity: 1;
+  }  
+
+  .heading{
+    padding-top: 50px;
+    position: relative;
+    padding-bottom: 0%;
+  }
